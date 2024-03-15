@@ -14,12 +14,73 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 300, height: 320)
-                    
                     .edgesIgnoringSafeArea(.all)
                     .padding(.top,-110)
-
-
+         
         } // fin vsstack
+        
+        
+        VStack{
+            ForEach(chanteuse) { chanteuse  in
+                
+                VStack{
+                    HStack{
+                        Image(chanteuse.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 90, height: 80)
+                            .clipShape(Circle())
+                        
+                        Text(chanteuse.nom)
+                        Text(chanteuse.prenom)
+
+                        
+                        
+                        
+                        
+                        
+                    } // Hstack
+                    
+                   
+                    
+
+
+
+                    
+                    
+                    
+                    
+                    
+                } // FIN VSTACK
+                
+                
+                
+                
+                
+                
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        } // Vstack
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
